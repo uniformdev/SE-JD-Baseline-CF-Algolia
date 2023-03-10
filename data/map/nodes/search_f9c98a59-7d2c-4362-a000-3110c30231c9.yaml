@@ -1,0 +1,9 @@
+id: f9c98a59-7d2c-4362-a000-3110c30231c9
+name: Search
+type: composition
+data: {}
+order: 750
+path: /search
+compositionId: b150c6ec-3c52-4b4e-a95b-65a23eae3347
+pathSegment: search
+projectMapId: 89a0d435-3096-4e77-84f1-eda9ea8bc677

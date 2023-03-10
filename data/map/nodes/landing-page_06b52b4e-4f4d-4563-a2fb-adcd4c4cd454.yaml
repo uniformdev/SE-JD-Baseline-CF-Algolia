@@ -1,0 +1,9 @@
+id: 06b52b4e-4f4d-4563-a2fb-adcd4c4cd454
+name: Landing Page
+type: composition
+data: {}
+order: 600
+path: /landing-page
+compositionId: 03ea7931-1423-402a-a6cf-9b2b8f9f6804
+pathSegment: landing-page
+projectMapId: 89a0d435-3096-4e77-84f1-eda9ea8bc677

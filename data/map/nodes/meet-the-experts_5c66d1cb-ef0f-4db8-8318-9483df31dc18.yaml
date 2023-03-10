@@ -1,0 +1,9 @@
+id: 5c66d1cb-ef0f-4db8-8318-9483df31dc18
+name: Custom Article Page (Algolia)
+type: composition
+data: {}
+order: 700
+path: /articles/meet-the-experts
+compositionId: d12b9af0-c798-4936-95c8-2ccb818fc43e
+pathSegment: meet-the-experts
+projectMapId: 89a0d435-3096-4e77-84f1-eda9ea8bc677

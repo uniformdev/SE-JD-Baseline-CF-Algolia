@@ -1,0 +1,120 @@
+composition:
+  _name: Landing Page
+  _id: 03ea7931-1423-402a-a6cf-9b2b8f9f6804
+  _slug: /landing-page
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Landing Page
+    pageMetaDescription:
+      type: text
+      value: Landing Page
+  slots:
+    content:
+      - _id: 5245d998-f8e3-428f-8ab3-61604cce7faf
+        type: $test
+        slots:
+          test:
+            - _id: d96d35c0-4343-4015-a35e-4510ae565f56
+              type: hero
+              variant: centered
+              parameters:
+                content:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 79eHqAV8HL7JK22czTOsbQ
+            - _id: 8bb70d53-c6af-4805-8ad1-11e702e78a8d
+              type: hero
+              variant: centered
+              parameters:
+                content:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 5maUJAP0h4e3O33U1USUvS
+        parameters:
+          test:
+            type: testSelect
+            value: landingTest
+      - _id: 6053909d-e5f2-4596-b47b-3e5db8748608
+        type: callToAction
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 5JvZF3XKF1TmOOQ3vgd1pr
+      - _id: 7a0665c3-9892-4192-af41-8e808f76dc1b
+        type: featuredCallout
+        variant: left
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 3o0BreZJBs7k8Vf4kOMHqT
+      - _id: c40ab583-f1bc-42cf-993e-750247d4b279
+        type: featuredCallout
+        variant: right
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 5BbH0QI5yAZIpdlVSU7GcD
+      - _id: 4a9d2d1a-6df4-401f-b201-0524befaed40
+        type: featuredCallout
+        variant: left
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 5hIG7ROGQswIiitDm6M8fZ
+      - _id: e6a668d9-1a14-47a9-b65c-6f90a1b0355f
+        type: accordion
+        slots:
+          items:
+            - _id: 34fecf5b-803d-418e-8c21-15839a0c1dc8
+              type: accordionItem
+              parameters:
+                content:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 1rajF4rDgvChBiR9XPd3vL
+            - _id: 94bd2fbc-7d9c-428f-b773-c999a3756601
+              type: accordionItem
+              parameters:
+                content:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 6lQ4LeFNoeQKcZt4TyEJKb
+            - _id: 38c7862b-ceaa-4855-bd14-db4d9674251f
+              type: accordionItem
+              parameters:
+                content:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 7O6rD0aZ5Urhw7ZabswYc
+            - _id: 075040c7-8d9a-44e9-8b8f-5b4089927224
+              type: accordionItem
+              parameters:
+                content:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 6TPlP9nDRWvFtGS4rU0MZt
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: B9lb0U5XuQDa2SFl0wKB3
+created: '2023-03-09T09:58:18.569504+00:00'
+modified: '2023-03-09T09:58:18.569504+00:00'
+pattern: false

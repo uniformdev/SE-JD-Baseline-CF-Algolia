@@ -1,0 +1,71 @@
+composition:
+  _name: Home
+  _id: c7831905-e8b8-4002-b127-1281326079c4
+  _slug: /
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Home Page
+    pageMetaDescription:
+      type: text
+      value: Baseline Home Page
+  slots:
+    content:
+      - _id: 8dd20094-a895-49e9-b956-ccdba68a4cb3
+        type: $personalization
+        slots:
+          pz:
+            - _id: 67d3e69b-8e3c-4a64-92b3-f873843e9523
+              type: hero
+              variant: ''
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: utmCampaign
+                        r: '50'
+                        op: '>='
+                    name: 'Hero: Contact us for details'
+                content:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 6eVTFdis6ixVh7Kch4eFZH
+            - _id: ff573aa1-3d29-4d28-a607-8397c34bf4b3
+              type: hero
+              variant: ''
+              parameters:
+                content:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 62idtt9VcaVLPwBps1Zqk8
+        parameters:
+          trackingEventName:
+            type: text
+            value: home-page-hero
+      - _id: fdaed343-768d-466d-8f63-821e92375a94
+        type: callToAction
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 5jLebPQsniyCJWMtLTZlxK
+      - _id: 46cfcc47-2cc4-417d-94a6-a6beaa23628d
+        type: featuredCallout
+        variant: left
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 3o0BreZJBs7k8Vf4kOMHqT
+          paddingTop:
+            type: select
+            value: None
+created: '2023-03-09T09:58:18.659178+00:00'
+modified: '2023-03-09T09:58:18.659178+00:00'
+pattern: false

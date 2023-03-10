@@ -1,0 +1,55 @@
+id: featuredCallout
+name: Featured Callout
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1675163085/vNext%20Demos/Baseline/canvas-preview/Featured_Callout_kkmv6v.png
+parameters:
+  - id: content
+    name: content
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        featuredCallout:
+          id: featuredCallout
+          name: Featured Callout
+  - id: paddingTop
+    name: Padding Top
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+  - id: paddingBottom
+    name: Padding Bottom
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+useTeamPermissions: true
+slots: []
+titleParameter: content
+canBeComposition: false
+created: '2023-03-09T09:58:15.10959+00:00'
+updated: '2023-03-09T09:59:37.793746+00:00'
+variants:
+  - id: right
+    name: Right
+  - id: left
+    name: Left

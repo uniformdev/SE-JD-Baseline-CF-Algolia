@@ -1,0 +1,90 @@
+id: sectionTwoColumns
+name: Section - Two columns
+icon: view-split
+parameters:
+  - id: leftContentColumns
+    name: Left Content Columns
+    type: select
+    helpText: >-
+      Controlling how elements are sized and placed across left column. See
+      details: https://tailwindcss.com/docs/grid-column 
+    typeConfig:
+      options:
+        - text: '3'
+          value: '3'
+        - text: '4'
+          value: '4'
+        - text: '5'
+          value: '5'
+        - text: '6'
+          value: '6'
+        - text: '7'
+          value: '7'
+        - text: '8'
+          value: '8'
+        - text: '9'
+          value: '9'
+      required: true
+  - id: rightContentColumns
+    name: Right Content Columns
+    type: select
+    helpText: >-
+      Controlling how elements are sized and placed across right column. See
+      details: https://tailwindcss.com/docs/grid-column 
+    typeConfig:
+      options:
+        - text: '3'
+          value: '3'
+        - text: '4'
+          value: '4'
+        - text: '5'
+          value: '5'
+        - text: '6'
+          value: '6'
+        - text: '7'
+          value: '7'
+        - text: '8'
+          value: '8'
+        - text: '9'
+          value: '9'
+      required: true
+  - id: verticalAlignment
+    name: Vertical Alignment
+    type: select
+    helpText: 'How would you like to align your item? '
+    typeConfig:
+      options:
+        - text: Top
+          value: items-start
+        - text: Middle
+          value: items-center
+        - text: Bottom
+          value: items-end
+      required: true
+  - id: mobileItemsOrder
+    name: Mobile Items Order
+    type: select
+    helpText: >-
+      Order of items for small sized screens. (left column first or right column
+      first)
+    typeConfig:
+      options:
+        - text: First
+          value: order-first
+        - text: Last
+          value: order-last
+useTeamPermissions: true
+slots:
+  - id: leftContent
+    name: Left Content
+    allowedComponents:
+      - callToAction
+    inheritAllowedComponents: false
+  - id: rightContent
+    name: Right Content
+    allowedComponents:
+      - contactForm
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-09T09:58:15.231706+00:00'
+updated: '2023-03-09T09:59:38.105221+00:00'

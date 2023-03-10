@@ -1,0 +1,16 @@
+id: algolia-hits
+name: Hits
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1677156516/vNext%20Demos/Baseline/canvas-preview/Articles_list_s1wnxy.png
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: hitComponent
+    name: HitComponent
+    maxComponents: 1
+    allowedComponents:
+      - algolia-hitArticle
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-10T10:21:11.430173+00:00'
+updated: '2023-03-10T11:16:14.119083+00:00'

@@ -1,0 +1,38 @@
+id: articlesList
+name: Articles List
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1677156516/vNext%20Demos/Baseline/canvas-preview/Articles_list_s1wnxy.png
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: contentFromContentful
+    name: Content From Contentful
+    type: contentfulQuery
+    helpText: ''
+    typeConfig:
+      source: default
+      required: false
+      allowedContentTypes:
+        article:
+          id: article
+          name: Article
+  - id: contentFromAlgolia
+    name: Content From Algolia
+    type: algolia-query
+    helpText: ''
+    typeConfig:
+      allowedIndex: articles
+      titleFieldName: title
+      imageUrlFieldName: thumbnail
+      subTitleFieldName: slug
+      level3TitleFieldName: ''
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-09T09:58:15.245068+00:00'
+updated: '2023-03-09T14:53:54.781409+00:00'

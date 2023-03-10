@@ -1,0 +1,25 @@
+id: hero
+name: Hero
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1675163013/vNext%20Demos/Baseline/canvas-preview/Hero_z6ssj7.png
+parameters:
+  - id: content
+    name: Content
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        hero:
+          id: hero
+          name: Hero
+useTeamPermissions: true
+slots: []
+titleParameter: content
+canBeComposition: false
+created: '2023-03-09T09:58:14.680014+00:00'
+updated: '2023-03-09T09:59:38.416131+00:00'
+variants:
+  - id: centered
+    name: Centered

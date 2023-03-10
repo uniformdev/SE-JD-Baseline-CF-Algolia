@@ -1,0 +1,49 @@
+composition:
+  _name: Search
+  _id: b150c6ec-3c52-4b4e-a95b-65a23eae3347
+  _slug: search
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: 'Search Article '
+  slots:
+    content:
+      - _id: e2c7f129-be11-4e59-8d65-fa184d039243
+        type: hero
+        variant: centered
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 6Z2nhZBEtajFNS1sv5a1VE
+      - _id: 75411093-de13-4cde-8698-fb0d8c0b9825
+        type: algolia-instantSearch
+        slots:
+          widgets:
+            - _id: b8c89dcd-e973-45ea-b59d-1d0da8ecf673
+              type: algolia-searchBox
+              parameters:
+                searchBoxParams:
+                  type: algolia-components
+                  value:
+                    searchBoxProps:
+                      placeholder: 'Search by keyword '
+                      searchAsYouType: true
+            - _id: db8fc17c-679d-4f76-900e-1da2a50f53ad
+              type: algolia-hits
+              slots:
+                hitComponent:
+                  - _id: 54210154-11ce-4c28-81ea-9d07d5c46fcf
+                    type: algolia-hitArticle
+        parameters:
+          instantSearchParams:
+            type: algolia-components
+            value:
+              instantSearchProps:
+                indexName: articles
+                stalledSearchDelay: 200
+created: '2023-03-10T08:53:40.433252+00:00'
+modified: '2023-03-10T10:53:02.913184+00:00'
+pattern: false

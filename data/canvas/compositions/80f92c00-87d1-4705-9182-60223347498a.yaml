@@ -1,0 +1,30 @@
+composition:
+  _name: Custom Article Page (Contentful)
+  _id: 80f92c00-87d1-4705-9182-60223347498a
+  _slug: how-to-find-the-perfect-cup-without-leaving-your-home
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Custom Article Page (Contentful)
+  slots:
+    content:
+      - _id: 132b0f7e-8d2e-4595-b60e-0157418a8a11
+        type: hero
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 62idtt9VcaVLPwBps1Zqk8
+      - _id: 8fd2dd74-d797-48d6-9a79-473235ebdf7d
+        type: articleContentfulTemplate
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: p9cRDL4wnVWieFwMYX4NL
+created: '2023-03-09T09:58:18.899254+00:00'
+modified: '2023-03-09T11:57:17.775704+00:00'
+pattern: false

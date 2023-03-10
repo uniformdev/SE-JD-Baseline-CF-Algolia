@@ -1,0 +1,22 @@
+id: callToAction
+name: Call to Action
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1675163156/vNext%20Demos/Baseline/canvas-preview/Call_to_Action_xfbvd7.png
+parameters:
+  - id: content
+    name: Content
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        callToAction:
+          id: callToAction
+          name: Call to Action
+useTeamPermissions: true
+slots: []
+titleParameter: content
+canBeComposition: false
+created: '2023-03-09T09:58:14.002345+00:00'
+updated: '2023-03-09T09:59:37.767927+00:00'

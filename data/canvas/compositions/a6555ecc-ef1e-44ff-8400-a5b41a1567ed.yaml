@@ -1,0 +1,36 @@
+composition:
+  _name: Articles
+  _id: a6555ecc-ef1e-44ff-8400-a5b41a1567ed
+  _slug: articles
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Articles
+  slots:
+    content:
+      - _id: a0fbd5f0-9bcb-462b-ab27-46876f7e6df3
+        type: articlesList
+        parameters:
+          title:
+            type: text
+            value: Articles
+          contentFromAlgolia:
+            type: algolia-query
+            value:
+              options:
+                count: 3
+                searchText: Best
+                facetsValues: {}
+              index_name: articles
+          contentFromContentful:
+            type: contentfulQuery
+            value:
+              count: 9
+              sortBy: sys.createdAt
+              source: default
+              sortOrder: asc
+              contentType: article
+created: '2023-03-09T09:58:17.311124+00:00'
+modified: '2023-03-10T10:55:25.59629+00:00'
+pattern: false

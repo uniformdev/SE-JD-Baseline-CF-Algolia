@@ -1,0 +1,31 @@
+composition:
+  _name: Custom Article Page (Algolia)
+  _id: d12b9af0-c798-4936-95c8-2ccb818fc43e
+  _slug: meet-the-experts
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Custom Article Page (Algolia)
+  slots:
+    content:
+      - _id: 06de963c-3356-4c7d-be0a-db20dd586e70
+        type: hero
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 5maUJAP0h4e3O33U1USUvS
+      - _id: a2395a6d-9b31-4356-b0e4-bcd260c7e47f
+        type: articleAlgoliaTemplate
+        parameters:
+          content:
+            type: algolia-record
+            value:
+              objectIDs:
+                - meet-the-experts
+              index_name: articles
+created: '2023-03-09T11:55:33.279293+00:00'
+modified: '2023-03-09T14:51:30.166315+00:00'
+pattern: false

@@ -1,0 +1,9 @@
+id: e168dc13-d44c-4f62-b408-c22984b85a05
+name: Custom Article Page (Contentful)
+type: composition
+data: {}
+order: 600
+path: /articles/how-to-find-the-perfect-cup-without-leaving-your-home
+compositionId: 80f92c00-87d1-4705-9182-60223347498a
+pathSegment: how-to-find-the-perfect-cup-without-leaving-your-home
+projectMapId: 89a0d435-3096-4e77-84f1-eda9ea8bc677

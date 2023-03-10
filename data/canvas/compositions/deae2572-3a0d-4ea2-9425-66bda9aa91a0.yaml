@@ -1,0 +1,23 @@
+composition:
+  _name: Article Page (Template)
+  _id: deae2572-3a0d-4ea2-9425-66bda9aa91a0
+  _slug: article-slug
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Article
+  slots:
+    content:
+      - _id: 06370bb3-5db3-4170-ad90-a8a6093ccaee
+        type: articleAlgoliaTemplate
+        parameters:
+          content:
+            type: algolia-record
+            value:
+              objectIDs:
+                - the-right-bean-for-pour-over-coffee-makers
+              index_name: articles
+created: '2023-03-09T09:58:18.646181+00:00'
+modified: '2023-03-09T14:54:33.360734+00:00'
+pattern: false
