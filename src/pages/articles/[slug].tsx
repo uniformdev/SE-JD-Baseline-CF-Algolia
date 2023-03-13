@@ -22,6 +22,7 @@ export const getStaticProps: GetStaticProps<{ preview?: boolean }> = async conte
         ...compositionProps,
         preview: Boolean(preview),
       },
+      revalidate: 1,
     }))
     .catch(() => ({ notFound: true }));
 };
